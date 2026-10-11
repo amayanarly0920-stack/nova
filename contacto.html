@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Estudio Nova</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+<header class="encabezado">
+    <a class="logo" href="index.html">NOVA<span>.</span></a>
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="portafolio.html">Portafolio</a>
+        <a href="servicios.html">Servicios</a>
+        <a class="activo" href="contacto.html">Contacto</a>
+    </nav>
+    <button id="modo" aria-label="Cambiar modo de color">🌙</button>
+</header>
+
+<main>
+    <section class="pagina">
+        <p class="etiqueta">HABLEMOS / 04</p>
+        <h1>Todo empieza<br>con un <span>hola.</span></h1>
+        <p>Cuéntanos tu idea. Nos encantará ayudarte a hacerla realidad.</p>
+    </section>
+
+    <section class="contacto contenido">
+        <div>
+            <p class="etiqueta">ESTAMOS PARA AYUDARTE</p>
+            <h2>Hagamos algo genial.</h2>
+            <p>Correo: hola@estudionova.co</p>
+            <p>Redes: @estudionova.creativo</p>
+        </div>
+
+        <form id="formulario" novalidate>
+            <label for="nombre">Tu nombre</label>
+            <input id="nombre" name="nombre" type="text"
+                   placeholder="Escribe tu nombre" required>
+
+            <label for="correo">Correo electrónico</label>
+            <input id="correo" name="correo" type="email"
+                   placeholder="nombre@correo.com" required>
+
+            <label for="servicio">Servicio de interés</label>
+            <select id="servicio" name="servicio" required>
+                <option value="">Selecciona un servicio</option>
+                <option>Identidad de marca</option>
+                <option>Diseño digital</option>
+                <option>Campañas creativas</option>
+                <option>Packaging y editorial</option>
+                <option>Otro</option>
+            </select>
+
+            <label for="mensaje">Cuéntanos tu idea</label>
+            <textarea id="mensaje" name="mensaje" rows="5"
+                      placeholder="Escribe tu mensaje..." required></textarea>
+
+            <button class="boton" type="submit">Validar formulario ↗</button>
+            <p id="respuesta" role="status" aria-live="polite"></p>
+            <small>Demostración académica: no envía correos reales.</small>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <a class="logo" href="index.html">NOVA<span>.</span></a>
+    <p>Diseñamos lo que viene.</p>
+    <small>© <span class="year"></span> Estudio Nova.</small>
+</footer>
+</body>
+</html>
